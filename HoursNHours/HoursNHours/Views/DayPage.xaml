@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HoursNHours.Views.DayPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hoeveel uur heb je gewerkt?" Padding="5" FontSize="Title" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="V++" Padding="5" VerticalOptions="Center" FontSize="Large" />
+                <Entry x:Name="VPlusPlusEntry" Placeholder="Uren" HorizontalOptions="EndAndExpand" Margin="5" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="HKU" Padding="5" VerticalOptions="Center" FontSize="Large" />
+                <Entry x:Name="HKUEntry" Placeholder="Uren" HorizontalOptions="EndAndExpand" Margin="5" />
+            </StackLayout>
+            <Button Text="Submit" FontSize="Large" VerticalOptions="EndAndExpand" Clicked="Submit_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
